@@ -171,143 +171,252 @@ export default function Home() {
 
 
 
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-      <section className="min-h-screen w-full bg-zinc-50 py-16 md:py-24 lg:py-16 overflow-hidden">
-        <div className="max-w-full">
-          <h2 className="mb-16 text-center text-2xl font-bold text-[#151515] md:text-5xl px-4 md:px-8 lg:px-16">
-            Why Bacsal Business Consultancy?
-          </h2>
 
+
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+      <section className="w-full bg-[#fdfdfd] py-16 md:py-24 lg:py-28 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="text-sm font-medium text-[#1B6174] tracking-wider uppercase mb-3 block">
+              How It Works
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515]">
+              Quick and Easy
+            </h2>
+          </motion.div>
+
+          {/* Process Steps */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 lg:gap-8">
+            {[
+              {
+                title: "Consult",
+                description: "Tell us about your business, financial needs, and goals. Schedule a consultation at your convenience.",
+                icon: (
+                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Manage",
+                description: "Our professional accountants handle your bookkeeping, taxes, and financial records accurately and on time.",
+                icon: (
+                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Relax",
+                description: "Focus on growing your business while we keep your finances organized, compliant, and stress-free.",
+                icon: (
+                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                  </svg>
+                )
+              }
+            ].map((step, index) => (
+              <div key={index} className="flex items-center">
+                {/* Step Card */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="flex flex-col items-center text-center max-w-[280px]"
+                >
+                  {/* Circle Icon Container */}
+                  <div className="relative mb-6">
+                    {/* Outer ring */}
+                    <div className="w-32 h-32 md:w-36 md:h-36 rounded-full bg-[#e8f5f0] flex items-center justify-center">
+                      {/* Inner circle */}
+                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#d4ede4] flex items-center justify-center">
+                        {step.icon}
+                      </div>
+                    </div>
+                    {/* Decorative leaf/accent */}
+                    <div className="absolute -top-1 -right-1 w-6 h-6">
+                      <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-[#1B6174]">
+                        <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8z" fill="currentColor" opacity="0.3"/>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="text-xl md:text-2xl font-bold text-[#151515] mb-3">
+                    {step.title}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
+                    {step.description}
+                  </p>
+                </motion.div>
+
+                {/* Arrow Connector (hidden on last item and on mobile) */}
+                {index < 2 && (
+                  <div className="hidden md:flex items-center mx-4 lg:mx-8">
+                    <svg className="w-12 h-12 text-zinc-300" fill="none" viewBox="0 0 24 24">
+                      <path 
+                        d="M5 12h14m0 0l-4-4m4 4l-4 4" 
+                        stroke="currentColor" 
+                        strokeWidth={1.5} 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                        strokeDasharray="2 2"
+                      />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
+{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
+{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
+{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
+{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
+      <section className="justify-center flex items-center h-[150vh] w-full bg-zinc-50 py-16 md:py-24 lg:py-28 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           {/* Two Column Layout Container */}
-          <div className="flex flex-col lg:flex-row items-center justify-start gap-12 lg:gap-20">
-            {/* Left Side - Image with Modern Styling */}
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
+            
+            {/* Left Side - Text Content */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="flex-shrink-0 relative"
+              className="flex-1 max-w-xl"
             >
-              {/* Main image container */}
-              <div className="relative rounded-r-2xl overflow-hidden shadow-xl flex items-center justify-center">
-                <Image
-                  src="/whybacsalgroup.jpg"
-                  alt="Bacsal Business Consultancy"
-                  width={1000}
-                  height={700}
-                  className="relative object-cover w-[360px] h-[260px] md:w-[580px] md:h-[420px] lg:w-[750px] lg:h-[540px]"
-                />
+              {/* Main Heading */}
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515] leading-tight mb-6">
+                Your trusted partner for business growth and financial excellence.
+              </h2>
+              
+              {/* Subtitle */}
+              <p className="text-zinc-500 text-base md:text-lg mb-10 leading-relaxed">
+                Discover a seamless journey with our expert consultancy services and dedicated support team, committed to your success.
+              </p>
+
+              {/* Bullet Points with Vertical Line */}
+              <div className="relative">
+                {/* Vertical connecting line */}
+                <div className="absolute left-[5px] top-2 bottom-2 w-[2px] bg-zinc-200" />
+                
+                <div className="space-y-8">
+                  {[
+                    {
+                      title: "Financial Planning",
+                      description: "Strategic budgeting and forecasting to maximize your business potential and ensure long-term stability."
+                    },
+                    {
+                      title: "Tax Advisory",
+                      description: "Expert tax strategies and compliance services to minimize liabilities and maximize returns for your business."
+                    },
+                    {
+                      title: "Business Analytics",
+                      description: "Data-driven insights and comprehensive reporting to help you make informed decisions for sustainable growth."
+                    }
+                  ].map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+                      viewport={{ once: true }}
+                      className="flex gap-6"
+                    >
+                      {/* Bullet point */}
+                      <div className="relative z-10 flex-shrink-0 w-3 h-3 mt-2 rounded-full bg-zinc-800" />
+                      
+                      {/* Content */}
+                      <div>
+                        <h3 className="text-lg md:text-xl font-bold text-[#151515] mb-2">
+                          {item.title}
+                        </h3>
+                        <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </motion.div>
 
-            {/* Right Side - Modern Grid Layout */}
-            <div className="flex items-center min-h-[500px] md:min-h-[520px] pr-4 md:pr-8 lg:pr-16">
-              <div className="grid grid-cols-2 gap-4 md:gap-5">
-              {[
-                { 
-                  title: "Financial Planning", 
-                  description: "Strategic budgeting and forecasting to maximize your business potential and ensure long-term stability.", 
-                  icon: "M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z",
-                  color: "from-emerald-500 to-teal-600",
-                  bgLight: "bg-emerald-50",
-                  textColor: "text-emerald-600",
-                  borderColor: "border-emerald-200"
-                },
-                { 
-                  title: "Tax Advisory", 
-                  description: "Expert tax strategies and compliance services to minimize liabilities and maximize returns.", 
-                  icon: "M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z",
-                  color: "from-blue-500 to-indigo-600",
-                  bgLight: "bg-blue-50",
-                  textColor: "text-blue-600",
-                  borderColor: "border-blue-200"
-                },
-                { 
-                  title: "Business Analytics", 
-                  description: "Data-driven insights and reporting to help you make informed decisions for growth.", 
-                  icon: "M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z",
-                  color: "from-violet-500 to-purple-600",
-                  bgLight: "bg-violet-50",
-                  textColor: "text-violet-600",
-                  borderColor: "border-violet-200"
-                },
-                { 
-                  title: "Audit & Assurance", 
-                  description: "Comprehensive auditing services to ensure accuracy, compliance, and stakeholder confidence.", 
-                  icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
-                  color: "from-amber-500 to-orange-600",
-                  bgLight: "bg-amber-50",
-                  textColor: "text-amber-600",
-                  borderColor: "border-amber-200"
-                },
-                { 
-                  title: "Payroll Management", 
-                  description: "Streamlined payroll processing and employee benefits administration for seamless operations.", 
-                  icon: "M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z",
-                  color: "from-rose-500 to-pink-600",
-                  bgLight: "bg-rose-50",
-                  textColor: "text-rose-600",
-                  borderColor: "border-rose-200"
-                },
-                { 
-                  title: "Strategic Consulting", 
-                  description: "Expert guidance on business growth, market expansion, and operational efficiency.", 
-                  icon: "M13 10V3L4 14h7v7l9-11h-7z",
-                  color: "from-cyan-500 to-sky-600",
-                  bgLight: "bg-cyan-50",
-                  textColor: "text-cyan-600",
-                  borderColor: "border-cyan-200"
-                }
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-                  viewport={{ once: true }}
-                  className="group"
-                >
-                  <div className={`relative bg-white rounded-2xl p-5 md:p-6 shadow-md hover:shadow-xl transition-all duration-500 border ${item.borderColor} overflow-hidden group-hover:-translate-y-2 min-h-[140px] md:min-h-[160px]`}>
-                    {/* Colored top accent bar */}
-                    <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${item.color} transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500`} />
-                    
-                    {/* Background pattern on hover */}
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className={`absolute top-0 right-0 w-32 h-32 ${item.bgLight} rounded-full -translate-y-16 translate-x-16 blur-2xl`} />
-                    </div>
-                    
-                    {/* Icon container with unique color */}
-                    <div className={`relative mb-4 w-12 h-12 rounded-2xl ${item.bgLight} flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-sm`}>
-                      <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-                      <svg 
-                        className={`relative w-6 h-6 ${item.textColor} group-hover:text-white transition-colors duration-300`} 
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={1.5}
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
-                      </svg>
-                    </div>
-                    
-                    {/* Title with colored hover */}
-                    <h3 className={`relative text-sm md:text-base font-bold text-zinc-800 group-hover:${item.textColor} transition-colors duration-300 mb-2`}>
-                      {item.title}
-                    </h3>
-                    
-                    {/* Description - Always visible but fades more on hover */}
-                    <p className="relative text-xs md:text-sm text-zinc-500 leading-relaxed line-clamp-2 group-hover:text-zinc-600 transition-colors duration-300">
-                      {item.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
+            {/* Right Side - Image with Floating Card */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="flex-1 relative"
+            >
+              {/* Main image container */}
+              <div className="relative rounded-2xl overflow-hidden">
+                <Image
+                  src="/whybacsalgroup.jpg"
+                  alt="Bacsal Business Consultancy"
+                  width={600}
+                  height={700}
+                  className="relative object-cover w-full h-[400px] md:h-[500px] lg:h-[580px] rounded-2xl"
+                />
               </div>
-            </div>
+              
+              {/* Floating Stats Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="absolute -bottom-6 -left-6 md:bottom-8 md:-left-12 bg-white rounded-2xl shadow-xl p-5 md:p-6 min-w-[240px] md:min-w-[280px]"
+              >
+                <h4 className="text-sm font-semibold text-zinc-800 mb-4">Our Services</h4>
+                <div className="space-y-3">
+                  {[
+                    { label: "Financial Planning", value: 95 },
+                    { label: "Tax Advisory", value: 88 },
+                    { label: "Business Analytics", value: 76 },
+                    { label: "Audit & Assurance", value: 82 }
+                  ].map((stat, index) => (
+                    <div key={index} className="flex items-center justify-between gap-4">
+                      <span className="text-xs md:text-sm text-zinc-600">{stat.label}</span>
+                      <div className="flex items-center gap-2">
+                        <div className="w-20 md:w-24 h-2 bg-zinc-100 rounded-full overflow-hidden">
+                          <motion.div
+                            initial={{ width: 0 }}
+                            whileInView={{ width: `${stat.value}%` }}
+                            transition={{ duration: 1, delay: 0.5 + index * 0.1, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                            className="h-full bg-zinc-800 rounded-full"
+                          />
+                        </div>
+                        <span className="text-xs font-medium text-zinc-800 w-8">{stat.value}%</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            </motion.div>
           </div>
 
         </div>
@@ -459,6 +568,181 @@ export default function Home() {
                   <span className="text-5xl md:text-6xl font-bold text-violet-600">
                     <CountUp from={0} to={7} duration={2} delay={0.3} />+
                   </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}
+{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}
+{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}
+{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}
+{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}{/*FAQ'S Section*/}
+      <section className="relative w-full bg-white px-4 py-20 md:px-8 md:py-28 lg:px-16 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515] mb-3">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-zinc-500 text-base md:text-lg">
+              <a href="/contact" className="text-[#1B6174] hover:underline">Contact us</a> for more information.
+            </p>
+          </motion.div>
+
+          {/* Two Column Layout */}
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+            {/* Left Side - FAQ Accordion */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="flex-1"
+            >
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "What services does Bacsal Business Consultancy offer?",
+                    answer: "We offer comprehensive business consultancy services including financial planning, tax advisory, business analytics, audit & assurance, payroll management, and strategic consulting to help your business grow and succeed."
+                  },
+                  {
+                    question: "How can Bacsal help my business reduce taxes?",
+                    answer: "Our expert tax advisors analyze your business structure and financial situation to identify legal tax-saving opportunities, ensure compliance with regulations, and implement strategies that minimize your tax liabilities while maximizing returns."
+                  },
+                  {
+                    question: "What industries does Bacsal specialize in?",
+                    answer: "We serve businesses across various industries including retail, manufacturing, professional services, healthcare, real estate, and technology startups. Our team adapts our expertise to meet the unique needs of each sector."
+                  },
+                  {
+                    question: "How do I get started with Bacsal Business Consultancy?",
+                    answer: "Getting started is easy! Simply schedule a free consultation through our contact page. We'll discuss your business needs, assess your current situation, and propose a customized plan to help you achieve your goals."
+                  },
+                  {
+                    question: "What makes Bacsal different from other consultancy firms?",
+                    answer: "Bacsal combines personalized attention with professional expertise. We treat each client as a partner, providing dedicated support, transparent pricing, and actionable insights that drive real business results."
+                  },
+                  {
+                    question: "Do you offer ongoing support or one-time consultations?",
+                    answer: "We offer both options! Whether you need a one-time assessment, monthly bookkeeping, quarterly reviews, or full-time financial management, we have flexible packages tailored to your business needs and budget."
+                  }
+                ].map((faq, index) => (
+                  <motion.details
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.1, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className="group bg-white rounded-xl border border-zinc-200 hover:border-[#1B6174]/30 transition-all duration-300 overflow-hidden"
+                  >
+                    <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
+                      <span className="text-[#151515] font-medium text-sm md:text-base pr-4">
+                        {faq.question}
+                      </span>
+                      <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#1B6174]/10 flex items-center justify-center group-open:bg-[#1B6174] transition-colors duration-300">
+                        <svg 
+                          className="w-4 h-4 text-[#1B6174] group-open:text-white group-open:rotate-45 transition-all duration-300" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth={2} 
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <div className="px-5 pb-5 text-zinc-500 text-sm md:text-base leading-relaxed">
+                      {faq.answer}
+                    </div>
+                  </motion.details>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Right Side - Question Card */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="flex-1 lg:max-w-md"
+            >
+              <div className="sticky top-8">
+                {/* Illustration */}
+                <div className="relative flex justify-center mb-8">
+                  <div className="relative">
+                    {/* Person illustration placeholder */}
+                    <div className="w-48 h-48 md:w-56 md:h-56 relative">
+                      {/* Background blob */}
+                      <div className="absolute inset-0 bg-[#1B6174]/5 rounded-full" />
+                      {/* Question marks decoration */}
+                      <div className="absolute -top-2 -right-2 text-4xl text-[#1B6174] font-bold animate-bounce">?</div>
+                      <div className="absolute top-8 -left-4 text-2xl text-[#1B6174]/60 font-bold">?</div>
+                      <div className="absolute -bottom-1 right-8 text-xl text-[#1B6174]/40 font-bold">?</div>
+                      {/* Center icon */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <svg className="w-24 h-24 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Any Question Card */}
+                <div className="bg-white rounded-2xl border border-zinc-200 p-6 md:p-8 shadow-sm">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#151515] mb-3">
+                    Any Question?
+                  </h3>
+                  <p className="text-zinc-500 text-sm md:text-base mb-6 leading-relaxed">
+                    You can ask anything you want to know about Bacsal Business Consultancy.
+                  </p>
+
+                  {/* Contact Form */}
+                  <div className="space-y-4">
+                    <div>
+                      <label className="text-zinc-600 text-sm mb-2 block">Full Name:</label>
+                      <input
+                        type="text"
+                        placeholder="Enter your full name"
+                        className="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:border-[#1B6174] focus:ring-2 focus:ring-[#1B6174]/20 outline-none transition-all duration-300 text-sm"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-zinc-600 text-sm mb-2 block">Email Address:</label>
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        className="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:border-[#1B6174] focus:ring-2 focus:ring-[#1B6174]/20 outline-none transition-all duration-300 text-sm"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-zinc-600 text-sm mb-2 block">Your Question:</label>
+                      <input
+                        type="text"
+                        placeholder="Enter your question here"
+                        className="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:border-[#1B6174] focus:ring-2 focus:ring-[#1B6174]/20 outline-none transition-all duration-300 text-sm"
+                      />
+                    </div>
+                    <a
+                      href="/contact"
+                      className="block w-full bg-[#1B6174] hover:bg-[#155666] text-white font-medium py-3 px-6 rounded-full text-center transition-colors duration-300"
+                    >
+                      Send Message
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>
