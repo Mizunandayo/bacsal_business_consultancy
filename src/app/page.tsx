@@ -173,6 +173,188 @@ export default function Home() {
 
 
 
+
+{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}
+{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}
+{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}
+{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}{/*Company Bento Box Section*/}
+{/*Company Bento Box Section*/}
+      <section className="relative w-full bg-gradient-to-b from-slate-100 via-slate-50 to-white px-4 py-20 md:px-8 md:py-28 lg:px-16 overflow-hidden">
+        <div className="max-w-6xl mx-auto">
+          {/* Bento Grid - Matching reference layout */}
+          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 auto-rows-[140px]">
+            
+            {/* Card 1 - IT Systems & Support (Top Left) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="col-span-4 md:col-span-3 lg:col-span-3 row-span-2 bg-slate-200/60 rounded-3xl p-6 flex flex-col justify-between"
+            >
+              {/* IT Icons Row */}
+              <div className="flex gap-2">
+                <div className="w-11 h-11 rounded-xl bg-white shadow-sm flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+                  </svg>
+                </div>
+                <div className="w-11 h-11 rounded-xl bg-white shadow-sm flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div className="w-11 h-11 rounded-xl bg-white shadow-sm flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-[#151515] mb-1.5">IT Systems & Support</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">Seamless software implementation and technical management to power your business operations.</p>
+              </div>
+            </motion.div>
+
+
+            
+
+            {/* Card 2 - Transcript Image (Tall Center) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="col-span-4 md:col-span-3 lg:col-span-3 row-span-4 rounded-3xl overflow-hidden relative"
+            >
+              <Image
+                src="/whybacsalgroup.jpg"
+                alt="Business Professional"
+                fill
+                className="object-cover"
+              />
+
+            </motion.div>
+
+
+
+
+            {/* Card 3 - HR+ Human Resources (Green) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="col-span-2 md:col-span-2 lg:col-span-3 row-span-2 bg-[#c8e6c9] rounded-3xl p-6 flex flex-col justify-center"
+            >
+              <span className="text-5xl md:text-6xl font-bold text-[#151515] mb-2">
+                HR+
+              </span>
+              <p className="text-[#151515]/70 text-sm leading-relaxed">Strategic talent acquisition, labor law guidance, and organizational development programs.</p>
+            </motion.div>
+
+            {/* Card 4 - Person Image Card (Top Right) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="col-span-2 md:col-span-2 lg:col-span-3 row-span-2 rounded-3xl overflow-hidden relative bg-gradient-to-br from-rose-200 to-orange-200"
+            >
+              <Image
+                src="/whybacsalgroup.jpg"
+                alt="Team Member"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+
+            {/* Card 5 - 100% Compliance (Accounting & Compliance) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="col-span-4 md:col-span-3 lg:col-span-3 row-span-2 bg-slate-200/60 rounded-3xl p-6 flex flex-col justify-center"
+            >
+              <span className="text-4xl md:text-5xl font-bold text-[#151515] mb-1">
+                <CountUp from={0} to={100} duration={2} />%
+              </span>
+              <span className="text-xl md:text-2xl font-bold text-[#1B6174] mb-2">Compliance</span>
+              <p className="text-slate-500 text-sm leading-relaxed">Total accuracy in bookkeeping, tax filings, and regulatory reporting requirements.</p>
+            </motion.div>
+
+            {/* Card 6 - Market Strategy & Insights (Marketing) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="col-span-4 md:col-span-5 lg:col-span-6 row-span-2 bg-slate-100/80 rounded-3xl p-6 relative overflow-hidden"
+            >
+              <div className="flex h-full">
+                {/* Left side - Text */}
+                <div className="flex-1 flex flex-col justify-center pr-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#151515] leading-tight italic">
+                    Market Strategy<br />& Insights
+                  </h3>
+                  <p className="text-slate-500 text-sm leading-relaxed mt-3">Data-driven brand positioning and communications to amplify your message across all channels.</p>
+                </div>
+                
+                {/* Right side - Marketing Icons */}
+                <div className="flex-1 relative">
+                  {/* Subtle connection lines */}
+                  <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="60" fill="none" stroke="#94a3b8" strokeWidth="1" strokeDasharray="4 4"/>
+                    <circle cx="100" cy="100" r="40" fill="none" stroke="#94a3b8" strokeWidth="1" strokeDasharray="4 4"/>
+                  </svg>
+                  
+                  {/* Icon 1 - Top (Target/Audience) */}
+                  <div className="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white shadow-lg bg-gradient-to-br from-amber-200 to-amber-300 flex items-center justify-center">
+                    <svg className="w-5 h-5 md:w-6 md:h-6 text-amber-700" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                    </svg>
+                  </div>
+                  
+                  {/* Icon 2 - Right (Analytics) */}
+                  <div className="absolute top-1/2 right-2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white shadow-lg bg-gradient-to-br from-rose-200 to-rose-300 flex items-center justify-center">
+                    <svg className="w-5 h-5 md:w-6 md:h-6 text-rose-700" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                    </svg>
+                  </div>
+                  
+                  {/* Icon 3 - Bottom Right (Megaphone) */}
+                  <div className="absolute bottom-4 right-8 w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white shadow-lg bg-gradient-to-br from-teal-200 to-teal-300 flex items-center justify-center">
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-teal-700" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
+                    </svg>
+                  </div>
+                  
+                  {/* Icon 4 - Left (Globe/Reach) */}
+                  <div className="absolute top-1/3 left-4 w-9 h-9 md:w-11 md:h-11 rounded-full border-2 border-white shadow-lg bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center">
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-blue-700" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                    </svg>
+                  </div>
+                  
+                  {/* Icon 5 - Bottom Left (Lightbulb/Ideas) */}
+                  <div className="absolute bottom-6 left-1/3 w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white shadow-lg bg-gradient-to-br from-violet-200 to-violet-300 flex items-center justify-center">
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-violet-700" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
 {/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
 {/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
 {/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
@@ -284,6 +466,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
+
 
 
 
