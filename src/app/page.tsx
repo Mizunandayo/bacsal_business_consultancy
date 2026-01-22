@@ -704,7 +704,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-zinc-500 text-sm font-medium mb-1">Partner Companies</h3>
                   <span className="text-4xl md:text-5xl font-bold text-blue-600">
-                    <CountUp from={0} to={3} duration={2} delay={0.1} />+
+                    <CountUp from={0} to={2} duration={2} delay={0.1} />
                   </span>
                 </div>
               </div>
