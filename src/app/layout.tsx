@@ -9,6 +9,9 @@ import "./globals.css";
 
 // Our custom Header component - will appear on EVERY page
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+
 
 // Initialize the Geist Sans font with a CSS variable name
 // This creates --font-geist-sans that we can use in CSS/Tailwind
@@ -63,6 +66,8 @@ export default function RootLayout({
         {children}
 
         {/* You could add a <Footer /> here and it would appear on every page too! */}
+              {/* Footer */}
+         <Footer />
       </body>
     </html>
   );
