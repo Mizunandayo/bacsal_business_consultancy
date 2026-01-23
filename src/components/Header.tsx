@@ -3,11 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
+
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
+  const pathname = usePathname();
+  const router = useRouter();
+
 
   // Track scroll position for header styling
   useEffect(() => {
@@ -25,10 +31,38 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
+    { href: "/#services", label: "Services"},
     { href: "/about", label: "About" },
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact" },
   ];
+
+
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Check if it's a hash link on the same page or navigating to home with hash
+    if (href.includes('#')) {
+      e.preventDefault();
+      const targetId = href.split('#')[1];
+      const basePath = href.split('#')[0] || '/';
+      
+      // If we're already on the target page, just scroll
+      if (pathname === basePath || (pathname === '/' && basePath === '/')) {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        // Navigate to the page first, then scroll
+        router.push(href);
+      }
+      setActiveLink(href);
+    } else {
+      setActiveLink(href);
+    }
+  };
+
+
 
   return (
     <header 
@@ -61,7 +95,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={() => setActiveLink(link.href)}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className={`relative px-5 py-2.5 text-sm font-medium rounded-full transition-all duration-300 ${
                   activeLink === link.href
                     ? "text-white bg-[#1B6174] shadow-lg shadow-[#1B6174]/25"

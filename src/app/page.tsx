@@ -193,6 +193,27 @@ export default function Home() {
               Our Services
             </a>
           </motion.div>
+
+          {/* Trust Badges */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+            className="mt-8 text-center"
+          >
+            <p className="text-zinc-400 text-xs mb-4">In partnership with :</p>
+            <div className="flex flex-wrap justify-center items-center gap-6">
+              <div className="flex items-center justify-center px-4  bg-white/80 backdrop-blur-sm rounded-lg border border-zinc-200 shadow-sm">
+                <Image
+                  src="/juanlogoblack.png"
+                  alt="Juan by Juan Tax"
+                  width={120}
+                  height={10}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </motion.div>
       
        </div>
 
@@ -514,139 +535,176 @@ export default function Home() {
 
 
 {/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}{/*Services Section*/}
-      <section className="justify-center flex items-center h-[150vh] w-full bg-zinc-50 py-16 md:py-24 lg:py-28 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-          {/* Two Column Layout Container */}
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-            
-            {/* Left Side - Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="flex-1 max-w-xl"
-            >
-              {/* Main Heading */}
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515] leading-tight mb-6">
-                Your trusted partner for business growth and financial excellence.
-              </h2>
-              
-              {/* Subtitle */}
-              <p className="text-zinc-500 text-base md:text-lg mb-10 leading-relaxed">
-                Discover a seamless journey with our expert consultancy services and dedicated support team, committed to your success.
-              </p>
+      <section id="services" className="relative w-full bg-gradient-to-b from-zinc-50 via-white to-zinc-50 py-20 md:py-28 lg:py-32 overflow-hidden">
+        {/* Background decorations */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#1B6174]/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl" />
+        </div>
 
-              {/* Bullet Points with Vertical Line */}
-              <div className="relative">
-                {/* Vertical connecting line */}
-                <div className="absolute left-[5px] top-2 bottom-2 w-[2px] bg-zinc-200" />
-                
-                <div className="space-y-8">
-                  {[
-                    {
-                      title: "Bookkeeping & Accounting",
-                      description: "Comprehensive bookkeeping services to keep your financial records accurate, organized, and up-to-date for better business decisions."
-                    },
-                    {
-                      title: "Tax Preparation",
-                      description: "Expert tax preparation and filing services to ensure compliance, minimize liabilities, and maximize your returns."
-                    },
-                    {
-                      title: "Business Compliance",
-                      description: "Stay compliant with BIR, SEC, and other regulatory requirements. We handle permits, registrations, and mandatory filings."
-                    },
-                    {
-                      title: "Business Systems and Processes",
-                      description: "Streamline your operations with efficient systems and processes designed to improve productivity and support sustainable growth."
-                    }
-                  ].map((item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-                      viewport={{ once: true }}
-                      className="flex gap-6"
-                    >
-                      {/* Bullet point */}
-                      <div className="relative z-10 flex-shrink-0 w-3 h-3 mt-2 rounded-full bg-zinc-800" />
-                      
-                      {/* Content */}
-                      <div>
-                        <h3 className="text-lg md:text-xl font-bold text-[#151515] mb-2">
-                          {item.title}
-                        </h3>
-                        <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 relative z-10">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-16 md:mb-20"
+          >
+            <div className="inline-flex items-center gap-2 bg-[#1B6174]/10 border border-[#1B6174]/20 rounded-full px-4 py-2 mb-6">
+              <div className="w-2 h-2 bg-[#1B6174] rounded-full animate-pulse" />
+              <span className="text-sm font-medium text-[#1B6174]">Our Services</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515] leading-tight mb-5">
+              Comprehensive Business Solutions
+            </h2>
+            <p className="text-zinc-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              Your trusted partner for business growth and financial excellence.
+            </p>
+          </motion.div>
 
-            {/* Right Side - Image with Floating Card */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="flex-1 relative"
-            >
-              {/* Main image container */}
-              <div className="relative rounded-2xl overflow-hidden">
-                <Image
-                  src="/whybacsalgroup.jpg"
-                  alt="Bacsal Business Consultancy"
-                  width={600}
-                  height={700}
-                  className="relative object-cover w-full h-[400px] md:h-[500px] lg:h-[580px] rounded-2xl"
-                />
-              </div>
-              
-              {/* Floating Stats Card */}
+          {/* Services - Modern Alternating Layout */}
+          <div className="space-y-6">
+            {[
+              {
+                number: "01",
+                title: "Accounting & Bookkeeping",
+                description: "Complete bookkeeping, financial statement preparation, general ledger review, account reconciliation, and clean-up of backlogged accounting records.",
+                features: ["Financial Statements", "Ledger Review", "Account Reconciliation", "Backlog Clean-up"],
+                color: "from-blue-500 to-cyan-500",
+                lightColor: "bg-blue-50",
+                textColor: "text-blue-600"
+              },
+              {
+                number: "02",
+                title: "Tax Compliance & Advisory",
+                description: "Preparation and filing of tax returns, BIR registration, tax planning and advisory, and handling of BIR notices, audits, and assessments.",
+                features: ["Tax Returns Filing", "BIR Registration", "Tax Planning", "Audit Support"],
+                color: "from-emerald-500 to-teal-500",
+                lightColor: "bg-emerald-50",
+                textColor: "text-emerald-600"
+              },
+              {
+                number: "03",
+                title: "Business Registration",
+                description: "SEC/DTI registration, BIR COR processing, LGU permits, barangay clearance, and assistance with amendments and closures.",
+                features: ["SEC/DTI Registration", "BIR COR Processing", "LGU Permits", "Business Amendments"],
+                color: "from-violet-500 to-purple-500",
+                lightColor: "bg-violet-50",
+                textColor: "text-violet-600"
+              },
+              {
+                number: "04",
+                title: "Payroll & Statutory Reporting",
+                description: "Payroll computation, payslip preparation, SSS, PhilHealth, and Pag-IBIG filings, and statutory compliance schedules.",
+                features: ["Payroll Computation", "Payslip Preparation", "Government Filings", "Compliance Schedules"],
+                color: "from-orange-500 to-amber-500",
+                lightColor: "bg-orange-50",
+                textColor: "text-orange-600"
+              },
+              {
+                number: "05",
+                title: "Financial Reporting & Management",
+                description: "Management accounting, budgeting, cash flow analysis, financial performance evaluation, and business planning support.",
+                features: ["Management Accounting", "Budgeting", "Cash Flow Analysis", "Performance Evaluation"],
+                color: "from-rose-500 to-pink-500",
+                lightColor: "bg-rose-50",
+                textColor: "text-rose-600"
+              },
+              {
+                number: "06",
+                title: "Business Advisory & Consultancy",
+                description: "Start-up advisory, business structuring, internal controls review, process improvement, and ongoing financial consultancy.",
+                features: ["Start-up Advisory", "Business Structuring", "Internal Controls", "Process Improvement"],
+                color: "from-[#1B6174] to-cyan-600",
+                lightColor: "bg-cyan-50",
+                textColor: "text-[#1B6174]"
+              },
+              {
+                number: "07",
+                title: "Specialized & Support Services",
+                description: "Sworn declarations, financial certifications, government accreditation assistance, audit support, and other tax-related services.",
+                features: ["Sworn Declarations", "Financial Certifications", "Accreditation Assistance", "Audit Support"],
+                color: "from-slate-600 to-zinc-700",
+                lightColor: "bg-slate-50",
+                textColor: "text-slate-600"
+              }
+            ].map((service, index) => (
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="absolute -bottom-6 -left-6 md:bottom-8 md:-left-12 bg-white rounded-2xl shadow-xl p-5 md:p-6 min-w-[240px] md:min-w-[280px]"
+                transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
+                viewport={{ once: true, margin: "-50px" }}
+                className={`group relative flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-stretch gap-0 bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-zinc-100`}
               >
-                <h4 className="text-sm font-semibold text-zinc-800 mb-4">Our Services</h4>
-                <div className="space-y-3">
-                  {[
-                    { label: "Bookkeeping & Accounting", value: 95 },
-                    { label: "Tax Preparation", value: 90 },
-                    { label: "Business Compliance", value: 88 },
-                    { label: "Systems & Processes", value: 85 }
-                  ].map((stat, index) => (
-                    <div key={index} className="flex items-center justify-between gap-4">
-                      <span className="text-xs md:text-sm text-zinc-600">{stat.label}</span>
-                      <div className="flex items-center gap-2">
-                        <div className="w-20 md:w-24 h-2 bg-zinc-100 rounded-full overflow-hidden">
-                          <motion.div
-                            initial={{ width: 0 }}
-                            whileInView={{ width: `${stat.value}%` }}
-                            transition={{ duration: 1, delay: 0.5 + index * 0.1, ease: "easeOut" }}
-                            viewport={{ once: true }}
-                            className="h-full bg-zinc-800 rounded-full"
-                          />
-                        </div>
-                        <span className="text-xs font-medium text-zinc-800 w-8">{stat.value}%</span>
-                      </div>
-                    </div>
-                  ))}
+                {/* Number & Gradient Side */}
+                <div className={`relative w-full lg:w-72 flex-shrink-0 bg-gradient-to-br ${service.color} p-8 lg:p-10 flex flex-col justify-between min-h-[200px] lg:min-h-[280px]`}>
+                  {/* Background Pattern */}
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-0 right-0 w-40 h-40 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
+                    <div className="absolute bottom-0 left-0 w-32 h-32 bg-white rounded-full translate-y-1/2 -translate-x-1/2" />
+                  </div>
+                  
+                  <span className="relative text-white/30 text-7xl lg:text-8xl font-bold leading-none">{service.number}</span>
+                  
+                  <div className="relative flex items-center gap-2 text-white/80 group-hover:text-white transition-colors mt-4 lg:mt-0">
+                    <span className="text-sm font-medium">Explore service</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Content Side */}
+                <div className="flex-1 p-8 lg:p-10 flex flex-col justify-center">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#151515] mb-4 group-hover:text-[#1B6174] transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-zinc-500 text-base leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  
+                  {/* Feature Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <span
+                        key={featureIndex}
+                        className={`inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium ${service.lightColor} ${service.textColor} transition-transform hover:scale-105`}
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
-            </motion.div>
+            ))}
           </div>
 
+          {/* Bottom CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mt-16 md:mt-20"
+          >
+            <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 bg-gradient-to-r from-zinc-50 to-slate-50 rounded-2xl border border-zinc-100">
+              <div className="text-center sm:text-left">
+                <p className="text-[#151515] font-semibold mb-1">Need a custom solution?</p>
+                <p className="text-zinc-500 text-sm">Let&apos;s discuss how we can help your business grow.</p>
+              </div>
+              <a 
+                href="/contact" 
+                className="inline-flex items-center gap-2 bg-[#1B6174] hover:bg-[#154a59] text-white font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-lg shadow-[#1B6174]/25 hover:shadow-xl hover:shadow-[#1B6174]/30 whitespace-nowrap"
+              >
+                <span>Get in Touch</span>
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -1339,26 +1397,177 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Trust Badges */}
-        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+        {/* Client Performance Analytics - Modern Split Layout */}
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 mt-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="mt-16 text-center"
+            className="relative"
           >
-            <p className="text-zinc-400 text-sm mb-6">Our Trusted Partners</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-              {/* Partner logos - replace with actual logos when available */}
-              <div className="flex items-center justify-center px-4 py-2 bg-zinc-100 rounded-lg border border-zinc-200">
-                <span className="text-sm font-medium text-zinc-600">Juan by Juan Tax</span>
-              </div>
-              <div className="flex items-center justify-center px-4 py-2 bg-zinc-100 rounded-lg border border-zinc-200">
-                <span className="text-sm font-medium text-zinc-600">AccountingSuite</span>
-              </div>
-              <div className="flex items-center justify-center px-4 py-2 bg-zinc-100 rounded-lg border border-zinc-200">
-                <span className="text-sm font-medium text-zinc-600">First Circle</span>
+            {/* Section Header */}
+            <div className="text-center mb-12">
+              <span className="inline-block px-4 py-1.5 bg-[#1B6174]/10 text-[#1B6174] text-xs font-semibold uppercase tracking-wider rounded-full mb-4">
+                Performance Metrics
+              </span>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#151515]">
+                Client Services Excellence
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Left Side - Main Satisfaction Score */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-[#151515] to-[#2a2a2a] rounded-3xl p-8 md:p-10 relative overflow-hidden"
+              >
+                {/* Subtle pattern overlay */}
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                    backgroundSize: '24px 24px'
+                  }} />
+                </div>
+
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between mb-8">
+                    <div>
+                      <p className="text-zinc-400 text-sm font-medium mb-2">Overall Rating</p>
+                      <div className="flex items-baseline gap-2">
+                        <CountUp
+                          to={4.98}
+                          from={0}
+                          duration={2}
+                          className="text-6xl md:text-7xl font-bold text-white"
+                        />
+                        <span className="text-zinc-500 text-2xl font-medium">/ 5</span>
+                      </div>
+                    </div>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Rating Breakdown */}
+                  <div className="space-y-4">
+                    {[
+                      { label: "Professionalism", value: 5.00, color: "from-emerald-400 to-emerald-500" },
+                      { label: "Expertise", value: 4.98, color: "from-blue-400 to-blue-500" },
+                      { label: "Advisory", value: 4.98, color: "from-violet-400 to-violet-500" },
+                      { label: "Timeliness", value: 4.98, color: "from-amber-400 to-amber-500" },
+                      { label: "Responsiveness", value: 4.98, color: "from-rose-400 to-rose-500" },
+                      { label: "Accuracy", value: 4.98, color: "from-cyan-400 to-cyan-500" }
+                    ].map((item, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.3, delay: 0.2 + index * 0.05, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="group"
+                      >
+                        <div className="flex items-center justify-between mb-1.5">
+                          <span className="text-zinc-400 text-sm">{item.label}</span>
+                          <span className="text-white text-sm font-semibold">{item.value.toFixed(2)}</span>
+                        </div>
+                        <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                          <motion.div
+                            initial={{ width: 0 }}
+                            whileInView={{ width: `${(item.value / 5) * 100}%` }}
+                            transition={{ duration: 1, delay: 0.3 + index * 0.1, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                            className={`h-full bg-gradient-to-r ${item.color} rounded-full`}
+                          />
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Right Side - NPS & Retention */}
+              <div className="grid grid-rows-2 gap-6">
+                {/* Net Promoter Score */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-emerald-50 to-teal-100 rounded-3xl p-6 md:p-8 relative overflow-hidden border border-emerald-200"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-200/30 rounded-full -translate-y-1/2 translate-x-1/2" />
+                  
+                  <div className="relative z-10 flex items-center justify-between h-full">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                        </svg>
+                        <p className="text-emerald-700 text-sm font-medium">Net Promoter Score</p>
+                      </div>
+                      <p className="text-emerald-600/70 text-xs max-w-[200px]">
+                        Clients who would recommend our services to others
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <div className="flex items-baseline">
+                        <CountUp
+                          to={95}
+                          from={0}
+                          duration={2}
+                          className="text-5xl md:text-6xl font-bold text-emerald-600"
+                        />
+                        <span className="text-emerald-500 text-2xl font-bold ml-1">%</span>
+                      </div>
+                      <p className="text-emerald-600 text-xs font-medium mt-1">Excellent</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Client Retention */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-3xl p-6 md:p-8 relative overflow-hidden border border-blue-200"
+                >
+                  <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-200/30 rounded-full translate-y-1/2 -translate-x-1/2" />
+                  
+                  <div className="relative z-10 flex items-center justify-between h-full">
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                        </svg>
+                        <p className="text-blue-700 text-sm font-medium">Client Retention</p>
+                      </div>
+                      <p className="text-blue-600/70 text-xs max-w-[200px]">
+                        Clients who continue to trust our services year after year
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <div className="flex items-baseline">
+                        <CountUp
+                          to={98}
+                          from={0}
+                          duration={2}
+                          className="text-5xl md:text-6xl font-bold text-blue-600"
+                        />
+                        <span className="text-blue-500 text-2xl font-bold ml-1">%</span>
+                      </div>
+                      <p className="text-blue-600 text-xs font-medium mt-1">Industry Leading</p>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>
@@ -1409,27 +1618,59 @@ export default function Home() {
                 {[
                   {
                     question: "What services does Bacsal Business Consultancy offer?",
-                    answer: "We offer comprehensive business consultancy services including financial planning, tax advisory, business analytics, audit & assurance, payroll management, and strategic consulting to help your business grow and succeed."
+                    answer: "Bacsal Business Consultancy provides end-to-end accounting, taxation, and business compliance services, wherein it is envisioned in the future to be complemented by advisory solutions in information technology, human resources, and marketing to support sustainable business growth."
                   },
                   {
-                    question: "How can Bacsal help my business reduce taxes?",
-                    answer: "Our expert tax advisors analyze your business structure and financial situation to identify legal tax-saving opportunities, ensure compliance with regulations, and implement strategies that minimize your tax liabilities while maximizing returns."
+                    question: "Who are your typical clients?",
+                    answer: "We serve startups, SMEs, professionals, cooperatives, and growing enterprises across various industries that require reliable compliance, sound financial management, and strategic advisory support."
                   },
                   {
-                    question: "What industries does Bacsal specialize in?",
-                    answer: "We serve businesses across various industries including retail, manufacturing, professional services, healthcare, real estate, and technology startups. Our team adapts our expertise to meet the unique needs of each sector."
+                    question: "Do you cater to newly registered businesses?",
+                    answer: "Yes. We assist businesses from pre-registration planning up to post-registration compliance, including DTI/SEC registration, BIR registration, local permits, and initial accounting setup."
                   },
                   {
-                    question: "How do I get started with Bacsal Business Consultancy?",
-                    answer: "Getting started is easy! Simply schedule a free consultation through our contact page. We'll discuss your business needs, assess your current situation, and propose a customized plan to help you achieve your goals."
+                    question: "What accounting and bookkeeping services do you provide?",
+                    answer: "Our services include bookkeeping, financial statement preparation, management reports, cash flow monitoring, and periodic financial analysis tailored to management and regulatory requirements."
                   },
                   {
-                    question: "What makes Bacsal different from other consultancy firms?",
-                    answer: "Bacsal combines personalized attention with professional expertise. We treat each client as a partner, providing dedicated support, transparent pricing, and actionable insights that drive real business results."
+                    question: "Do you handle tax compliance and filings?",
+                    answer: "Yes. We manage tax registrations, monthly and quarterly tax filings, annual income tax returns, tax compliance reviews, and coordination during BIR audits or assessments."
                   },
                   {
-                    question: "Do you offer ongoing support or one-time consultations?",
-                    answer: "We offer both options! Whether you need a one-time assessment, monthly bookkeeping, quarterly reviews, or full-time financial management, we have flexible packages tailored to your business needs and budget."
+                    question: "Can you help with BIR audits and tax assessments?",
+                    answer: "Absolutely. We provide audit assistance, document preparation, reconciliation, representation, and advisory support to help clients address BIR findings efficiently and compliantly."
+                  },
+                  {
+                    question: "Do you offer payroll and HR-related services?",
+                    answer: "Yes. Our HR support includes payroll processing, statutory contributions (SSS, PhilHealth, Pag-IBIG), basic HR documentation, and advisory on HR systems and compliance."
+                  },
+                  {
+                    question: "What IT-related services do you provide?",
+                    answer: "We offer IT advisory focused on business systems, accounting software implementation, process automation, data management, and technology solutions that improve operational efficiency."
+                  },
+                  {
+                    question: "Do you provide business advisory and consulting?",
+                    answer: "Yes. We conduct financial feasibility studies, business diagnostics, performance reviews, internal control assessments, and strategic advisory to support informed decision-making."
+                  },
+                  {
+                    question: "How do you price your services?",
+                    answer: "Our fees depend on the scope, complexity, and frequency of services required. We offer transparent, customized proposals aligned with your business needs and growth stage."
+                  },
+                  {
+                    question: "Is my business information kept confidential?",
+                    answer: "Yes. Client confidentiality and data security are strictly observed. We adhere to professional ethics and implement safeguards to protect sensitive information."
+                  },
+                  {
+                    question: "Do you work with clients outside your immediate location?",
+                    answer: "Yes. We support clients nationwide through digital coordination, online meetings, and secure document sharing."
+                  },
+                  {
+                    question: "How do we start working with Bacsal Business Consultancy?",
+                    answer: "You may contact us to schedule an initial consultation. We assess your needs, discuss objectives, and propose a tailored service engagement."
+                  },
+                  {
+                    question: "Why should we choose Bacsal Business Consultancy?",
+                    answer: "We combine technical excellence, practical business insight, and a client-focused approach—delivering compliant, strategic, and value-driven solutions that help businesses move forward with confidence."
                   }
                 ].map((faq, index) => (
                   <motion.details
