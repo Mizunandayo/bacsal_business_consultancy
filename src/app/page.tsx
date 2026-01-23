@@ -20,7 +20,7 @@ export default function Home() {
 {/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}
 
       {/* Banner Cover */}
-      <section className="relative w-full h-[40vh] md:h-[50vh] lg:h-[60vh] overflow-hidden">
+      <section className="relative w-full h-[40vh] md:h-[50vh] lg:h-[30vh] overflow-hidden">
         <Image
           src="/canada.jpg"
           alt="Bacsal Business Consultancy Banner"
@@ -29,25 +29,7 @@ export default function Home() {
           priority
         />
 
-        {/* Banner content */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-4xl"
-          >
-            <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-white/90 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-              Bacsal Business Consultancy
-            </span>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-              Empowering Businesses to Thrive
-            </h1>
-            <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto drop-shadow">
-              Your trusted partner for accounting, compliance, and business growth solutions in the Philippines.
-            </p>
-          </motion.div>
-        </div>
+
 
         {/* Scroll indicator */}
         <motion.div
@@ -70,7 +52,7 @@ export default function Home() {
       </section>
 
       <section 
-        className="relative flex h-screen w-full justify-between px-4 py-16 md:px-8 md:py-24 lg:px-16 lg:py-1 bg-cover bg-center bg-no-repeat overflow-hidden"
+        className="relative flex h-screen w-full justify-between px-4 py-12 md:px-8 md:py-24 lg:px-16 lg:py-1 bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{ backgroundImage: "url('/homebackground.png')" }}
       >
         {/* Orbiting particles for hero */}
@@ -567,16 +549,20 @@ export default function Home() {
                 <div className="space-y-8">
                   {[
                     {
-                      title: "Financial Planning",
-                      description: "Strategic budgeting and forecasting to maximize your business potential and ensure long-term stability."
+                      title: "Bookkeeping & Accounting",
+                      description: "Comprehensive bookkeeping services to keep your financial records accurate, organized, and up-to-date for better business decisions."
                     },
                     {
-                      title: "Tax Advisory",
-                      description: "Expert tax strategies and compliance services to minimize liabilities and maximize returns for your business."
+                      title: "Tax Preparation",
+                      description: "Expert tax preparation and filing services to ensure compliance, minimize liabilities, and maximize your returns."
                     },
                     {
-                      title: "Business Analytics",
-                      description: "Data-driven insights and comprehensive reporting to help you make informed decisions for sustainable growth."
+                      title: "Business Compliance",
+                      description: "Stay compliant with BIR, SEC, and other regulatory requirements. We handle permits, registrations, and mandatory filings."
+                    },
+                    {
+                      title: "Business Systems and Processes",
+                      description: "Streamline your operations with efficient systems and processes designed to improve productivity and support sustainable growth."
                     }
                   ].map((item, index) => (
                     <motion.div
@@ -635,10 +621,10 @@ export default function Home() {
                 <h4 className="text-sm font-semibold text-zinc-800 mb-4">Our Services</h4>
                 <div className="space-y-3">
                   {[
-                    { label: "Financial Planning", value: 95 },
-                    { label: "Tax Advisory", value: 88 },
-                    { label: "Business Analytics", value: 76 },
-                    { label: "Audit & Assurance", value: 82 }
+                    { label: "Bookkeeping & Accounting", value: 95 },
+                    { label: "Tax Preparation", value: 90 },
+                    { label: "Business Compliance", value: 88 },
+                    { label: "Systems & Processes", value: 85 }
                   ].map((stat, index) => (
                     <div key={index} className="flex items-center justify-between gap-4">
                       <span className="text-xs md:text-sm text-zinc-600">{stat.label}</span>
@@ -914,6 +900,51 @@ export default function Home() {
                       <span className="text-2xl font-bold text-emerald-400">100%</span>
                       <p className="text-xs text-zinc-500">Compliant</p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 7 - Technology-Driven */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.35, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <div className="h-full bg-white rounded-3xl p-6 border border-zinc-200/80 shadow-sm hover:shadow-xl hover:border-indigo-200 transition-all duration-500 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-indigo-100 to-blue-100 rounded-full -translate-y-1/2 translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-100 to-blue-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                    </svg>
+                  </div>
+                  
+                  <h3 className="text-lg font-bold text-[#151515] mb-2">Technology-Driven</h3>
+                  <p className="text-zinc-500 text-sm leading-relaxed">Modern accounting systems and digital tools for efficient, accurate reporting.</p>
+                  
+                  <div className="mt-4 flex items-center gap-2">
+                    <div className="flex -space-x-1">
+                      <div className="w-6 h-6 rounded-full bg-indigo-500 border-2 border-white flex items-center justify-center">
+                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div className="w-6 h-6 rounded-full bg-blue-500 border-2 border-white flex items-center justify-center">
+                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div className="w-6 h-6 rounded-full bg-cyan-500 border-2 border-white flex items-center justify-center">
+                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="text-xs text-zinc-500">3+ Tech Partners</span>
                   </div>
                 </div>
               </div>
@@ -1513,6 +1544,55 @@ export default function Home() {
       </section>
 
 
+
+
+{/*Quote Banner Section*/}{/*Quote Banner Section*/}{/*Quote Banner Section*/}{/*Quote Banner Section*/}{/*Quote Banner Section*/}
+{/*Quote Banner Section*/}{/*Quote Banner Section*/}{/*Quote Banner Section*/}{/*Quote Banner Section*/}{/*Quote Banner Section*/}
+      <section className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
+        {/* Background Image Placeholder */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B6174] to-[#0f4a5a]">
+          {/* Replace with actual image when available */}
+          <Image
+            src="/placeholder-quote-banner.jpg"
+            alt="Bacsal Business Consultancy"
+            fill
+            className="object-cover opacity-30"
+          />
+        </div>
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B6174]/80 to-[#0f4a5a]/80" />
+        
+        {/* Quote Content */}
+        <div className="relative z-10 h-full flex items-center justify-center px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="max-w-4xl text-center"
+          >
+            {/* Quote Icon */}
+            <svg className="w-12 h-12 md:w-16 md:h-16 text-white/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+            
+            {/* Quote Text */}
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              &ldquo;A trusted partner to our clients by delivering reliable accounting and tax solutions.&rdquo;
+            </h2>
+            
+            {/* Attribution */}
+            <div className="flex items-center justify-center gap-3">
+              <div className="w-12 h-[2px] bg-white/40" />
+              <span className="text-white/80 text-sm md:text-base font-medium tracking-wider uppercase">
+                Bacsal Business Consultancy
+              </span>
+              <div className="w-12 h-[2px] bg-white/40" />
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
 
 
