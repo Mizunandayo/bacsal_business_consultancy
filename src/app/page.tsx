@@ -18,6 +18,57 @@ export default function Home() {
 {/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}
 {/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}
 {/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}
+
+      {/* Banner Cover */}
+      <section className="relative w-full h-[40vh] md:h-[50vh] lg:h-[60vh] overflow-hidden">
+        <Image
+          src="/canada.jpg"
+          alt="Bacsal Business Consultancy Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+
+        {/* Banner content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="max-w-4xl"
+          >
+            <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-white/90 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+              Bacsal Business Consultancy
+            </span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+              Empowering Businesses to Thrive
+            </h1>
+            <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto drop-shadow">
+              Your trusted partner for accounting, compliance, and business growth solutions in the Philippines.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="absolute bottom-6 left-1/2 -translate-x-1/2"
+        >
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-white/60 text-xs tracking-wider uppercase">Scroll</span>
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="w-5 h-8 rounded-full border-2 border-white/30 flex items-start justify-center p-1"
+            >
+              <div className="w-1 h-2 bg-white/60 rounded-full" />
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
       <section 
         className="relative flex h-screen w-full justify-between px-4 py-16 md:px-8 md:py-24 lg:px-16 lg:py-1 bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{ backgroundImage: "url('/homebackground.png')" }}
@@ -171,6 +222,117 @@ export default function Home() {
 
 
 
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
+      <section className="w-full bg-[#fdfdfd] py-16 md:py-24 lg:py-28 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="text-sm font-medium text-[#1B6174] tracking-wider uppercase mb-3 block">
+              How It Works
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515]">
+              Quick and Easy
+            </h2>
+          </motion.div>
+
+          {/* Process Steps */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 lg:gap-8">
+            {[
+              {
+                title: "Consult",
+                description: "Tell us about your business, financial needs, and goals. Schedule a consultation at your convenience.",
+                icon: (
+                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Manage",
+                description: "Our professional accountants handle your bookkeeping, taxes, and financial records accurately and on time.",
+                icon: (
+                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Relax",
+                description: "Focus on growing your business while we keep your finances organized, compliant, and stress-free.",
+                icon: (
+                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                  </svg>
+                )
+              }
+            ].map((step, index) => (
+              <div key={index} className="flex items-center">
+                {/* Step Card */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="flex flex-col items-center text-center max-w-[280px]"
+                >
+                  {/* Circle Icon Container */}
+                  <div className="relative mb-6">
+                    {/* Outer ring */}
+                    <div className="w-32 h-32 md:w-36 md:h-36 rounded-full bg-[#e8f5f0] flex items-center justify-center">
+                      {/* Inner circle */}
+                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#d4ede4] flex items-center justify-center">
+                        {step.icon}
+                      </div>
+                    </div>
+                    {/* Decorative leaf/accent */}
+                    <div className="absolute -top-1 -right-1 w-6 h-6">
+                      <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-[#1B6174]">
+                        <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8z" fill="currentColor" opacity="0.3"/>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="text-xl md:text-2xl font-bold text-[#151515] mb-3">
+                    {step.title}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
+                    {step.description}
+                  </p>
+                </motion.div>
+
+                {/* Arrow Connector (hidden on last item and on mobile) */}
+                {index < 2 && (
+                  <div className="hidden md:flex items-center mx-4 lg:mx-8">
+                    <svg className="w-12 h-12 text-zinc-300" fill="none" viewBox="0 0 24 24">
+                      <path 
+                        d="M5 12h14m0 0l-4-4m4 4l-4 4" 
+                        stroke="currentColor" 
+                        strokeWidth={1.5} 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                        strokeDasharray="2 2"
+                      />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
 
 
@@ -355,117 +517,6 @@ export default function Home() {
 
 
 
-{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
-{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
-{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
-{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
-{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}{/*Summary Process Section*/}
-      <section className="w-full bg-[#fdfdfd] py-16 md:py-24 lg:py-28 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-          {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-sm font-medium text-[#1B6174] tracking-wider uppercase mb-3 block">
-              How It Works
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515]">
-              Quick and Easy
-            </h2>
-          </motion.div>
-
-          {/* Process Steps */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 lg:gap-8">
-            {[
-              {
-                title: "Consult",
-                description: "Tell us about your business, financial needs, and goals. Schedule a consultation at your convenience.",
-                icon: (
-                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-                  </svg>
-                )
-              },
-              {
-                title: "Manage",
-                description: "Our professional accountants handle your bookkeeping, taxes, and financial records accurately and on time.",
-                icon: (
-                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
-                  </svg>
-                )
-              },
-              {
-                title: "Relax",
-                description: "Focus on growing your business while we keep your finances organized, compliant, and stress-free.",
-                icon: (
-                  <svg className="w-10 h-10 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                  </svg>
-                )
-              }
-            ].map((step, index) => (
-              <div key={index} className="flex items-center">
-                {/* Step Card */}
-                <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
-                  viewport={{ once: true }}
-                  className="flex flex-col items-center text-center max-w-[280px]"
-                >
-                  {/* Circle Icon Container */}
-                  <div className="relative mb-6">
-                    {/* Outer ring */}
-                    <div className="w-32 h-32 md:w-36 md:h-36 rounded-full bg-[#e8f5f0] flex items-center justify-center">
-                      {/* Inner circle */}
-                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#d4ede4] flex items-center justify-center">
-                        {step.icon}
-                      </div>
-                    </div>
-                    {/* Decorative leaf/accent */}
-                    <div className="absolute -top-1 -right-1 w-6 h-6">
-                      <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-[#1B6174]">
-                        <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8z" fill="currentColor" opacity="0.3"/>
-                      </svg>
-                    </div>
-                  </div>
-                  
-                  {/* Title */}
-                  <h3 className="text-xl md:text-2xl font-bold text-[#151515] mb-3">
-                    {step.title}
-                  </h3>
-                  
-                  {/* Description */}
-                  <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
-                    {step.description}
-                  </p>
-                </motion.div>
-
-                {/* Arrow Connector (hidden on last item and on mobile) */}
-                {index < 2 && (
-                  <div className="hidden md:flex items-center mx-4 lg:mx-8">
-                    <svg className="w-12 h-12 text-zinc-300" fill="none" viewBox="0 0 24 24">
-                      <path 
-                        d="M5 12h14m0 0l-4-4m4 4l-4 4" 
-                        stroke="currentColor" 
-                        strokeWidth={1.5} 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round"
-                        strokeDasharray="2 2"
-                      />
-                    </svg>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
 
@@ -612,6 +663,296 @@ export default function Home() {
 
         </div>
       </section>
+
+
+
+
+
+
+
+{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}
+{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}
+{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}{/*Why Choose Us Section*/}
+      <section className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f0fdf4] px-4 py-20 md:px-8 md:py-28 lg:px-16 overflow-hidden">
+        {/* Animated background grid */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+          {/* Floating gradient orbs */}
+          <div className="absolute top-20 left-[10%] w-72 h-72 bg-gradient-to-br from-emerald-200/40 to-teal-200/40 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-[10%] w-96 h-96 bg-gradient-to-br from-cyan-200/30 to-blue-200/30 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-br from-[#1B6174]/5 to-emerald-100/20 rounded-full blur-3xl" />
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          {/* Modern Header with badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1B6174]/10 to-emerald-500/10 border border-[#1B6174]/20 rounded-full px-4 py-2 mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span className="text-sm font-medium text-[#1B6174]">Why Partner With Us</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#151515] via-[#1B6174] to-emerald-600 bg-clip-text text-transparent mb-5">
+              Built for Your Success
+            </h2>
+            <p className="text-zinc-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+              Experience the difference of working with a consultancy that puts your growth first.
+            </p>
+          </motion.div>
+
+          {/* Modern Bento Grid Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+            
+            {/* Card 1 - Featured Large Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="md:col-span-2 lg:col-span-1 lg:row-span-2 group"
+            >
+              <div className="h-full bg-gradient-to-br from-[#1B6174] to-[#0f4a5a] rounded-3xl p-8 relative overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+                
+                <div className="relative z-10 h-full flex flex-col">
+                  <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                  </div>
+                  
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                    Licensed & Certified Experts
+                  </h3>
+                  
+                  <p className="text-white/80 leading-relaxed mb-6 flex-grow">
+                    Our team of CPAs and certified professionals ensures your business receives expert-level guidance, full compliance, and strategic insights you can trust.
+                  </p>
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="flex -space-x-2">
+                      <div className="w-8 h-8 rounded-full bg-emerald-400 border-2 border-white flex items-center justify-center text-xs font-bold text-white">C</div>
+                      <div className="w-8 h-8 rounded-full bg-cyan-400 border-2 border-white flex items-center justify-center text-xs font-bold text-white">P</div>
+                      <div className="w-8 h-8 rounded-full bg-teal-400 border-2 border-white flex items-center justify-center text-xs font-bold text-white">A</div>
+                    </div>
+                    <span className="text-white/70 text-sm">Certified Professionals</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 2 - Fast Turnaround */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <div className="h-full bg-white rounded-3xl p-6 border border-zinc-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-500 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-amber-100 to-orange-100 rounded-full -translate-y-1/2 translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  
+                  <h3 className="text-lg font-bold text-[#151515] mb-2">Fast Turnaround</h3>
+                  <p className="text-zinc-500 text-sm leading-relaxed">Quick responses and timely delivery on all financial reports.</p>
+                  
+                  <div className="mt-4 flex items-center gap-2">
+                    <span className="text-2xl font-bold text-amber-500">24h</span>
+                    <span className="text-xs text-zinc-400">avg response</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 3 - Transparent Pricing */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <div className="h-full bg-white rounded-3xl p-6 border border-zinc-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-500 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-emerald-100 to-green-100 rounded-full -translate-y-1/2 translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-100 to-green-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                    </svg>
+                  </div>
+                  
+                  <h3 className="text-lg font-bold text-[#151515] mb-2">Transparent Pricing</h3>
+                  <p className="text-zinc-500 text-sm leading-relaxed">No hidden fees. Clear, competitive rates for all businesses.</p>
+                  
+                  <div className="mt-4 flex items-center gap-1">
+                    <svg className="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-xs text-zinc-500">No surprise charges</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 4 - Dedicated Support (Wide) */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="md:col-span-2 group"
+            >
+              <div className="h-full bg-gradient-to-r from-violet-50 via-purple-50 to-fuchsia-50 rounded-3xl p-6 md:p-8 border border-violet-100 relative overflow-hidden">
+                <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-violet-200/30 rounded-full blur-2xl" />
+                
+                <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-violet-500/25">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <div className="flex-grow">
+                    <h3 className="text-xl md:text-2xl font-bold text-[#151515] mb-2">Dedicated Account Manager</h3>
+                    <p className="text-zinc-600 leading-relaxed">Get assigned a personal account manager who knows your business inside out and is always just a call or message away.</p>
+                  </div>
+                  
+                  <div className="flex-shrink-0 flex items-center gap-3 bg-white rounded-2xl px-5 py-3 shadow-sm border border-violet-100">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs text-zinc-400">Available</p>
+                      <p className="text-sm font-semibold text-violet-600">Mon-Sat</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 5 - Data-Driven */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <div className="h-full bg-white rounded-3xl p-6 border border-zinc-200/80 shadow-sm hover:shadow-xl hover:border-cyan-200 transition-all duration-500 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-full -translate-y-1/2 translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                    </svg>
+                  </div>
+                  
+                  <h3 className="text-lg font-bold text-[#151515] mb-2">Data-Driven Insights</h3>
+                  <p className="text-zinc-500 text-sm leading-relaxed">Modern analytics tools providing actionable business insights.</p>
+                  
+                  {/* Mini chart visualization */}
+                  <div className="mt-4 flex items-end gap-1 h-8">
+                    <div className="w-2 bg-cyan-200 rounded-t h-3"></div>
+                    <div className="w-2 bg-cyan-300 rounded-t h-5"></div>
+                    <div className="w-2 bg-cyan-400 rounded-t h-4"></div>
+                    <div className="w-2 bg-cyan-500 rounded-t h-7"></div>
+                    <div className="w-2 bg-cyan-600 rounded-t h-8"></div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 6 - Proven Track Record */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="group"
+            >
+              <div className="h-full bg-gradient-to-br from-[#151515] to-zinc-800 rounded-3xl p-6 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+                
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center mb-5">
+                    <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                    </svg>
+                  </div>
+                  
+                  <h3 className="text-lg font-bold text-white mb-2">Proven Track Record</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">Trusted expertise helping businesses succeed since 2024.</p>
+                  
+                  <div className="flex items-center gap-4">
+                    <div>
+                      <span className="text-2xl font-bold text-emerald-400">CPA</span>
+                      <p className="text-xs text-zinc-500">Licensed</p>
+                    </div>
+                    <div className="w-px h-8 bg-zinc-700"></div>
+                    <div>
+                      <span className="text-2xl font-bold text-emerald-400">100%</span>
+                      <p className="text-xs text-zinc-500">Compliant</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Modern CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
+          >
+            <div className="inline-flex flex-col sm:flex-row items-center gap-4">
+              <a
+                href="/contact"
+                className="group inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#1B6174] to-emerald-600 px-8 font-medium text-white transition-all duration-300 hover:shadow-xl hover:shadow-[#1B6174]/25 hover:scale-105"
+              >
+                Start Your Journey
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+              <a
+                href="/services"
+                className="inline-flex h-14 items-center justify-center rounded-full border-2 border-zinc-200 px-8 font-medium text-zinc-700 transition-all duration-300 hover:border-[#1B6174] hover:text-[#1B6174]"
+              >
+                View All Services
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
+
+
+
 
 
 
@@ -765,6 +1106,236 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
+
+
+{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}
+{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}
+{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}{/*Client Testimonials Section*/}
+      <section className="relative w-full bg-gradient-to-b from-white to-slate-50 py-20 md:py-28 overflow-hidden">
+        {/* CSS for marquee animations */}
+        <style jsx>{`
+          @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes scroll-right {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+          }
+          .animate-scroll-left {
+            animation: scroll-left 40s linear infinite;
+          }
+          .animate-scroll-right {
+            animation: scroll-right 40s linear infinite;
+          }
+          .animate-scroll-left:hover,
+          .animate-scroll-right:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="text-sm font-medium text-[#1B6174] tracking-wider uppercase mb-3 block">
+              Testimonials
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#151515] mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-zinc-500 text-base md:text-lg max-w-2xl mx-auto">
+              Don&apos;t just take our word for it. Here&apos;s what business owners have to say about working with Bacsal Business Consultancy.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Testimonials Marquee - Row 1 (scrolls left) */}
+        <div className="relative mb-6 overflow-hidden">
+          <div className="flex animate-scroll-left" style={{ width: 'max-content' }}>
+            {[...Array(2)].map((_, setIndex) => (
+              <div key={setIndex} className="flex gap-6 px-3">
+                {[
+                  {
+                    name: "Happy Client",
+                    position: "Business Owner",
+                    quote: "Bacsal Business Consultancy has been instrumental in helping us streamline our financial operations. Their expertise and dedication are truly remarkable.",
+                    rating: 5
+                  },
+                  {
+                    name: "Satisfied Partner",
+                    position: "Entrepreneur",
+                    quote: "Working with Bacsal has given us peace of mind knowing our compliance and accounting needs are in expert hands. Highly recommended!",
+                    rating: 5
+                  },
+                  {
+                    name: "Valued Client",
+                    position: "Small Business Owner",
+                    quote: "Professional, responsive, and incredibly knowledgeable. The Bacsal team truly understands the needs of growing businesses in the Philippines.",
+                    rating: 5
+                  },
+                  {
+                    name: "Trusted Partner",
+                    position: "Company Director",
+                    quote: "Their attention to detail and proactive approach to financial management has been invaluable for our business growth and success.",
+                    rating: 5
+                  }
+                ].map((testimonial, index) => (
+                  <div
+                    key={`row1-${setIndex}-${index}`}
+                    className="w-[350px] md:w-[400px] flex-shrink-0"
+                  >
+                    <div className="h-full bg-white rounded-3xl p-6 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#1B6174]/20 transition-all duration-500">
+                      {/* Quote Icon */}
+                      <div className="mb-4">
+                        <svg className="w-8 h-8 text-[#1B6174]/20" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+
+                      {/* Rating Stars */}
+                      <div className="flex gap-1 mb-3">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        ))}
+                      </div>
+
+                      {/* Quote Text */}
+                      <p className="text-zinc-600 text-sm leading-relaxed mb-4">
+                        &ldquo;{testimonial.quote}&rdquo;
+                      </p>
+
+                      {/* Client Info */}
+                      <div className="flex items-center gap-3 pt-4 border-t border-zinc-100">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1B6174] to-[#2d8a9e] flex items-center justify-center text-white font-bold">
+                          {testimonial.name.charAt(0)}
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-[#151515] text-sm">{testimonial.name}</h4>
+                          <p className="text-zinc-500 text-xs">{testimonial.position}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Testimonials Marquee - Row 2 (scrolls right) */}
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll-right" style={{ width: 'max-content' }}>
+            {[...Array(2)].map((_, setIndex) => (
+              <div key={setIndex} className="flex gap-6 px-3">
+                {[
+                  {
+                    name: "Growing Business",
+                    position: "Retail Owner",
+                    quote: "Switching to Bacsal was the best decision we made. Their expertise in tax planning and compliance has saved us time and resources.",
+                    rating: 5
+                  },
+                  {
+                    name: "Happy Entrepreneur",
+                    position: "Tech Startup Founder",
+                    quote: "Bacsal's team went above and beyond to help us during our expansion. Their financial insights were crucial in making informed decisions.",
+                    rating: 5
+                  },
+                  {
+                    name: "Loyal Client",
+                    position: "Service Provider",
+                    quote: "From bookkeeping to strategic planning, Bacsal handles everything with precision. They've become an essential part of our operations.",
+                    rating: 5
+                  },
+                  {
+                    name: "Business Partner",
+                    position: "Construction Firm",
+                    quote: "What I appreciate most is their responsiveness and genuine care for our success. Bacsal treats our business like their own.",
+                    rating: 5
+                  }
+                ].map((testimonial, index) => (
+                  <div
+                    key={`row2-${setIndex}-${index}`}
+                    className="w-[350px] md:w-[400px] flex-shrink-0"
+                  >
+                    <div className="h-full bg-white rounded-3xl p-6 border border-zinc-200 shadow-sm hover:shadow-xl hover:border-[#1B6174]/20 transition-all duration-500">
+                      {/* Quote Icon */}
+                      <div className="mb-4">
+                        <svg className="w-8 h-8 text-[#1B6174]/20" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+
+                      {/* Rating Stars */}
+                      <div className="flex gap-1 mb-3">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        ))}
+                      </div>
+
+                      {/* Quote Text */}
+                      <p className="text-zinc-600 text-sm leading-relaxed mb-4">
+                        &ldquo;{testimonial.quote}&rdquo;
+                      </p>
+
+                      {/* Client Info */}
+                      <div className="flex items-center gap-3 pt-4 border-t border-zinc-100">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1B6174] to-[#2d8a9e] flex items-center justify-center text-white font-bold">
+                          {testimonial.name.charAt(0)}
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-[#151515] text-sm">{testimonial.name}</h4>
+                          <p className="text-zinc-500 text-xs">{testimonial.position}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Trust Badges */}
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
+          >
+            <p className="text-zinc-400 text-sm mb-6">Our Trusted Partners</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              {/* Partner logos - replace with actual logos when available */}
+              <div className="flex items-center justify-center px-4 py-2 bg-zinc-100 rounded-lg border border-zinc-200">
+                <span className="text-sm font-medium text-zinc-600">Juan by Juan Tax</span>
+              </div>
+              <div className="flex items-center justify-center px-4 py-2 bg-zinc-100 rounded-lg border border-zinc-200">
+                <span className="text-sm font-medium text-zinc-600">AccountingSuite</span>
+              </div>
+              <div className="flex items-center justify-center px-4 py-2 bg-zinc-100 rounded-lg border border-zinc-200">
+                <span className="text-sm font-medium text-zinc-600">First Circle</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
+
 
 
 
