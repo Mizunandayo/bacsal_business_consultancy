@@ -4,7 +4,6 @@ import Image from "next/image";
 import RotatingText from "../components/RotatingText";
 import CountUp from "../components/CountUp";
 import Footer from "../components/Footer";
-
 import { motion } from "motion/react";
 
 export default function Home() {
@@ -20,7 +19,7 @@ export default function Home() {
 {/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}{/* Hero Section */}
 
       {/* Banner Cover */}
-      <section className="relative w-full h-[40vh] md:h-[50vh] lg:h-[30vh] overflow-hidden">
+      <section id="home" className="relative w-full h-[40vh] md:h-[50vh] lg:h-[30vh] overflow-hidden">
         <Image
           src="/canada.jpg"
           alt="Bacsal Business Consultancy Banner"
@@ -174,25 +173,6 @@ export default function Home() {
 
 
         
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            className="flex gap-4"
-          >
-            <a
-              href="/contact"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-black px-8 font-medium text-white transition-colors hover:bg-zinc-800"
-            >
-              Get Started
-            </a>
-            <a
-              href="/services"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-300 px-8 font-medium text-black transition-colors hover:bg-zinc-100"
-            >
-              Our Services
-            </a>
-          </motion.div>
 
           {/* Trust Badges */}
           <motion.div
