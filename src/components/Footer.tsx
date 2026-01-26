@@ -27,10 +27,10 @@ export default function Footer() {
                 href="/contact"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-[#1B6174] px-8 font-medium text-white transition-all duration-300 hover:bg-[#2d8a9e] hover:scale-105"
               >
-                Get Started
+                Contact Us
               </Link>
               <Link
-                href="/services"
+                href="/#services"
                 className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-700 px-8 font-medium text-white transition-all duration-300 hover:bg-zinc-800 hover:border-zinc-600"
               >
                 View Services

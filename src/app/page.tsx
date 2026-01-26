@@ -628,12 +628,7 @@ export default function Home() {
                   
                   <span className="relative text-white/30 text-7xl lg:text-8xl font-bold leading-none">{service.number}</span>
                   
-                  <div className="relative flex items-center gap-2 text-white/80 group-hover:text-white transition-colors mt-4 lg:mt-0">
-                    <span className="text-sm font-medium">Explore service</span>
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                  </div>
+
                 </div>
 
                 {/* Content Side */}
@@ -989,32 +984,6 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Modern CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="mt-16 text-center"
-          >
-            <div className="inline-flex flex-col sm:flex-row items-center gap-4">
-              <a
-                href="/contact"
-                className="group inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#1B6174] to-emerald-600 px-8 font-medium text-white transition-all duration-300 hover:shadow-xl hover:shadow-[#1B6174]/25 hover:scale-105"
-              >
-                Start Your Journey
-                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
-              <a
-                href="/services"
-                className="inline-flex h-14 items-center justify-center rounded-full border-2 border-zinc-200 px-8 font-medium text-zinc-700 transition-all duration-300 hover:border-[#1B6174] hover:text-[#1B6174]"
-              >
-                View All Services
-              </a>
-            </div>
-          </motion.div>
         </div>
       </section>
 
@@ -1685,81 +1654,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Right Side - Question Card */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="flex-1 lg:max-w-md"
-            >
-              <div className="sticky top-8">
-                {/* Illustration */}
-                <div className="relative flex justify-center mb-8">
-                  <div className="relative">
-                    {/* Person illustration placeholder */}
-                    <div className="w-48 h-48 md:w-56 md:h-56 relative">
-                      {/* Background blob */}
-                      <div className="absolute inset-0 bg-[#1B6174]/5 rounded-full" />
-                      {/* Question marks decoration */}
-                      <div className="absolute -top-2 -right-2 text-4xl text-[#1B6174] font-bold animate-bounce">?</div>
-                      <div className="absolute top-8 -left-4 text-2xl text-[#1B6174]/60 font-bold">?</div>
-                      <div className="absolute -bottom-1 right-8 text-xl text-[#1B6174]/40 font-bold">?</div>
-                      {/* Center icon */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <svg className="w-24 h-24 text-[#1B6174]" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                {/* Any Question Card */}
-                <div className="bg-white rounded-2xl border border-zinc-200 p-6 md:p-8 shadow-sm">
-                  <h3 className="text-2xl md:text-3xl font-bold text-[#151515] mb-3">
-                    Any Question?
-                  </h3>
-                  <p className="text-zinc-500 text-sm md:text-base mb-6 leading-relaxed">
-                    You can ask anything you want to know about Bacsal Business Consultancy.
-                  </p>
-
-                  {/* Contact Form */}
-                  <div className="space-y-4">
-                    <div>
-                      <label className="text-zinc-600 text-sm mb-2 block">Full Name:</label>
-                      <input
-                        type="text"
-                        placeholder="Enter your full name"
-                        className="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:border-[#1B6174] focus:ring-2 focus:ring-[#1B6174]/20 outline-none transition-all duration-300 text-sm"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-zinc-600 text-sm mb-2 block">Email Address:</label>
-                      <input
-                        type="email"
-                        placeholder="Enter your email"
-                        className="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:border-[#1B6174] focus:ring-2 focus:ring-[#1B6174]/20 outline-none transition-all duration-300 text-sm"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-zinc-600 text-sm mb-2 block">Your Question:</label>
-                      <input
-                        type="text"
-                        placeholder="Enter your question here"
-                        className="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:border-[#1B6174] focus:ring-2 focus:ring-[#1B6174]/20 outline-none transition-all duration-300 text-sm"
-                      />
-                    </div>
-                    <a
-                      href="/contact"
-                      className="block w-full bg-[#1B6174] hover:bg-[#155666] text-white font-medium py-3 px-6 rounded-full text-center transition-colors duration-300"
-                    >
-                      Send Message
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -1818,27 +1713,6 @@ export default function Home() {
 
 
 
-{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}
-{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}
-{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}
-{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}
-{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}{/*Contact Section*/}
-      <section className="w-full bg-zinc-900 px-4 py-16 md:px-8 md:py-24 lg:px-16">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-4 text-2xl font-semibold text-white md:text-3xl">
-            Get In Touch
-          </h2>
-          <p className="mb-8 text-lg text-zinc-400">
-            Ready to grow your business? Contact us today.
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 font-medium text-black transition-colors hover:bg-zinc-200"
-          >
-            Contact Us
-          </a>
-        </div>
-      </section>
 
 
 
