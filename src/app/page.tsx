@@ -357,8 +357,8 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#151515] mb-1.5">IT Systems & Support</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">Seamless software implementation and technical management to power your business operations.</p>
+                <h3 className="text-xl font-bold text-[#151515] mb-1.5">Utilizes Accounting Systems & Tools</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">Enhances efficiency and accuracy with expert IT support and modern accounting software.</p>
               </div>
             </motion.div>
 
@@ -374,7 +374,7 @@ export default function Home() {
               className="col-span-4 md:col-span-3 lg:col-span-3 row-span-4 rounded-3xl overflow-hidden relative"
             >
               <Image
-                src="/whybacsalgroup.jpg"
+                src="/bacsallong.jpg"
                 alt="Business Professional"
                 fill
                 className="object-cover"
@@ -394,9 +394,9 @@ export default function Home() {
               className="col-span-2 md:col-span-2 lg:col-span-3 row-span-2 bg-[#c8e6c9] rounded-3xl p-6 flex flex-col justify-center"
             >
               <span className="text-5xl md:text-6xl font-bold text-[#151515] mb-2">
-                HR+
+                AI+
               </span>
-              <p className="text-[#151515]/70 text-sm leading-relaxed">Strategic talent acquisition, labor law guidance, and organizational development programs.</p>
+              <p className="text-[#151515]/70 text-sm leading-relaxed">Leverages advanced AI automation to streamline accounting, tax, and business processes—delivering faster, more accurate, and data-driven solutions that empower clients to focus on growth.</p>
             </motion.div>
 
             {/* Card 4 - Person Image Card (Top Right) */}
@@ -408,7 +408,7 @@ export default function Home() {
               className="col-span-2 md:col-span-2 lg:col-span-3 row-span-2 rounded-3xl overflow-hidden relative bg-gradient-to-br from-rose-200 to-orange-200"
             >
               <Image
-                src="/whybacsalgroup.jpg"
+                src="/hrs.png"
                 alt="Team Member"
                 fill
                 className="object-cover"
@@ -788,7 +788,7 @@ export default function Home() {
                   </div>
                   
                   <h3 className="text-lg font-bold text-[#151515] mb-2">Fast Turnaround</h3>
-                  <p className="text-zinc-500 text-sm leading-relaxed">Quick responses and timely delivery on all financial reports.</p>
+                  <p className="text-zinc-500 text-sm leading-relaxed">Accomodate concerns and issues</p>
                   
                   <div className="mt-4 flex items-center gap-2">
                     <span className="text-2xl font-bold text-amber-500">24h</span>
@@ -844,27 +844,17 @@ export default function Home() {
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-violet-500/25">
                       <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
                   </div>
                   
                   <div className="flex-grow">
-                    <h3 className="text-xl md:text-2xl font-bold text-[#151515] mb-2">Dedicated Account Manager</h3>
-                    <p className="text-zinc-600 leading-relaxed">Get assigned a personal account manager who knows your business inside out and is always just a call or message away.</p>
+                    <h3 className="text-xl md:text-2xl font-bold text-[#151515] mb-2">Working Hours</h3>
+                    <p className="text-zinc-600 leading-relaxed">We're available Monday to Saturday, 9:00 AM – 6:00 PM, ready to assist with all your business needs.</p>
                   </div>
                   
-                  <div className="flex-shrink-0 flex items-center gap-3 bg-white rounded-2xl px-5 py-3 shadow-sm border border-violet-100">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-xs text-zinc-400">Available</p>
-                      <p className="text-sm font-semibold text-violet-600">Mon-Sat</p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </motion.div>
@@ -902,13 +892,13 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Card 6 - Proven Track Record */}
+            {/* Card 6 - Continuously Learning */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="group"
+              className="md:col-span-2 group"
             >
               <div className="h-full bg-gradient-to-br from-[#151515] to-zinc-800 rounded-3xl p-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full -translate-y-1/2 translate-x-1/2" />
@@ -916,72 +906,37 @@ export default function Home() {
                 <div className="relative z-10">
                   <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center mb-5">
                     <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
                     </svg>
                   </div>
                   
-                  <h3 className="text-lg font-bold text-white mb-2">Proven Track Record</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">Trusted expertise helping businesses succeed since 2024.</p>
+                  <h3 className="text-lg font-bold text-white mb-2">Continuously Learning</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">Staying ahead with the latest industry trends, regulations, and best practices.</p>
                   
-                  <div className="flex items-center gap-4">
+
+
+
+                  <div className="flex items-center gap-6">
+
+         
                     <div>
-                      <span className="text-2xl font-bold text-emerald-400">CPA</span>
-                      <p className="text-xs text-zinc-500">Licensed</p>
-                    </div>
-                    <div className="w-px h-8 bg-zinc-700"></div>
-                    <div>
-                      <span className="text-2xl font-bold text-emerald-400">100%</span>
-                      <p className="text-xs text-zinc-500">Compliant</p>
+                      <div className="flex gap-0.5 mb-1">
+                        <span className="text-emerald-400 text-lg">★</span>
+                        <span className="text-emerald-400 text-lg">★</span>
+                        <span className="text-emerald-400 text-lg">★</span>
+                        <span className="text-emerald-400 text-lg">★</span>
+                        <span className="text-emerald-400 text-lg">★</span>
+                      </div>
+                      <p className="text-xs text-zinc-500">Competency</p>
                     </div>
                   </div>
+
+
+
                 </div>
               </div>
             </motion.div>
 
-            {/* Card 7 - Technology-Driven */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.35, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <div className="h-full bg-white rounded-3xl p-6 border border-zinc-200/80 shadow-sm hover:shadow-xl hover:border-indigo-200 transition-all duration-500 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-indigo-100 to-blue-100 rounded-full -translate-y-1/2 translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-100 to-blue-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-                    </svg>
-                  </div>
-                  
-                  <h3 className="text-lg font-bold text-[#151515] mb-2">Technology-Driven</h3>
-                  <p className="text-zinc-500 text-sm leading-relaxed">Modern accounting systems and digital tools for efficient, accurate reporting.</p>
-                  
-                  <div className="mt-4 flex items-center gap-2">
-                    <div className="flex -space-x-1">
-                      <div className="w-6 h-6 rounded-full bg-indigo-500 border-2 border-white flex items-center justify-center">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <div className="w-6 h-6 rounded-full bg-blue-500 border-2 border-white flex items-center justify-center">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <div className="w-6 h-6 rounded-full bg-cyan-500 border-2 border-white flex items-center justify-center">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                    </div>
-                    <span className="text-xs text-zinc-500">3+ Tech Partners</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
           </div>
 
         </div>

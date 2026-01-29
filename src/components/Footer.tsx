@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="bg-zinc-900/50 rounded-2xl p-4 border border-zinc-800/50 mb-6">
               <div className="flex items-center gap-4">
                 <Image
-                  src="/aj1x1.png"
+                  src="/aj11.png"
                   alt="Arjay B. Bacsal"
                   width={48}
                   height={48}

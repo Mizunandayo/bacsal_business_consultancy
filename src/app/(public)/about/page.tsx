@@ -15,7 +15,7 @@ export default function AboutPage() {
       title: "START OF PRO BONO SERVICES", 
       color: "bg-[#1B6174]",
       fullDescription: "Our journey began with a commitment to community service. We provided free accounting and tax advisory services to small and medium enterprises in Mariveles, Bataan, helping local businesses establish proper financial foundations.",
-      image: "/timeline-probono.jpg",
+      image: "/probono.png",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
@@ -28,7 +28,7 @@ export default function AboutPage() {
       title: "BUSINESS PLANNING", 
       color: "bg-[#2D8A9E]",
       fullDescription: "With growing demand for our services, Mr. Bacsal developed a comprehensive business plan to formalize operations. This phase included market research, service portfolio development, and strategic planning for sustainable growth.",
-      image: "/timeline-planning.jpg",
+      image: "/businessplanning.png",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
@@ -41,7 +41,7 @@ export default function AboutPage() {
       title: "FORMAL REGISTRATION/ SOFT LAUNCH", 
       color: "bg-[#3BA3B8]",
       fullDescription: "Bacsal Business Consultancy was officially registered as a business entity. We launched our services to a broader market, offering professional accounting, tax advisory, and business compliance solutions to startups and growing enterprises.",
-      image: "/timeline-registration.jpg",
+      image: "/softlaunch.png",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
@@ -51,10 +51,10 @@ export default function AboutPage() {
     { 
       date: "OCT 2025", 
       year: "2025",
-      title: "PARTNERSHIP WITH JUAN BY JUAN TAX", 
+      title: "STRATEGIC PARTNERSHIP WITH JUAN BY JUAN TAX", 
       color: "bg-[#1B6174]",
       fullDescription: "We established a strategic partnership with Juan by Juan Tax, integrating technology-driven solutions into our service offerings. This collaboration enhanced our capability to deliver efficient, modern accounting and tax solutions. We also conducted accounting system training for practitioners and business owners in the Freeport Area of Bataan.",
-      image: "/timeline-partnership.jpg",
+      image: "/juanpartnership.png",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
@@ -67,7 +67,7 @@ export default function AboutPage() {
       title: "GRAND OPENING OF THE FIRM", 
       color: "bg-[#2D8A9E]",
       fullDescription: "We celebrated our grand opening ceremony, marking a significant milestone in our journey. The event coincided with our principal's birthday, making it a doubly special occasion. This marked the beginning of a new chapter as a fully established consultancy firm.",
-      image: "/bacsalbusinessopening.jpg",
+      image: "/grandopening.png",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
