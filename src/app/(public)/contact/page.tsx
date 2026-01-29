@@ -3,6 +3,9 @@
 import { motion } from "motion/react";
 import { useState, useRef } from "react";
 
+
+
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -14,20 +17,64 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value});
+   setError(null);
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+
+
+
+
+
+//SUBMIT CONTACT US FORM FUNCTION
+//SUBMIT CONTACT US FORM FUNCTION
+//SUBMIT CONTACT US FORM FUNCTION
+//SUBMIT CONTACT US FORM FUNCTION
+//SUBMIT CONTACT US FORM FUNCTION
+const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setSubmitted(true);
+    setError(null);
+
+try{
+  const response = await fetch('/api/contactus',{
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
+  });
+
+  const data = await response.json();
+  if(!response.ok){
+      throw new Error(data.error || 'Failed to send message');
+
+  }
+setSubmitted(true);
+
+} catch (err) {
+console.error('Form submission error:', err);
+setError( err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+
+
+} finally {
+  setIsSubmitting(false);
+}
+
   };
+
+
+
+
+
+
+
+
 
   const services = [
     "Accounting Services",
@@ -37,6 +84,34 @@ export default function ContactPage() {
     "Process Solutions",
     "Other",
   ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <main className="bg-[#fafafa]">
