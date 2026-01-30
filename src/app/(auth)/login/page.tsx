@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("");
+  const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -15,18 +15,59 @@ export default function LoginPage() {
   const [forgotEmail, setForgotEmail] = useState("");
   const [isSendingReset, setIsSendingReset] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+
+
+
+
+
+
+
+
+
+  const handleBacsalAccountUserLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
+
+    try{
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers:{
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({identifier, password}),
+      });
+
+      const data = await response.json();
+
+
+      if(!response.ok){
+        alert(data.error || 'An error occurred during login.');
+        return;
+      }
+
+      // Successful login
+      console.log('Login successful: ');
+
     
-    // TODO: Implement actual authentication logic
-    console.log("Login attempt:", { email, password });
+    }catch (error) {
+      console.error('Login error:', error);
+      alert('An error occurred during login. Please try again.');
     
-    // Simulate API call
-    setTimeout(() => {
+    }finally{
       setIsLoading(false);
-    }, 1500);
+    }
+  
   };
+
+
+
+
+
+
+
+
+
+
 
   const handleForgotPassword = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -98,18 +139,18 @@ export default function LoginPage() {
           <h1 className="text-3xl font-bold text-[#151515] mb-8">Login</h1>
 
           {/* Login Form */}
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleBacsalAccountUserLoginSubmit} className="space-y-5">
             {/* Email Field */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-zinc-600 mb-2">
-                Email
+                Email or Username
               </label>
               <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="username@gmail.com"
+                type="text"
+                id="identifier"
+                value={identifier}
+                onChange={(e) => setIdentifier(e.target.value)}
+                placeholder="Enter email or username"
                 className="w-full px-4 py-3 rounded-lg border border-zinc-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#1B6174] focus:border-transparent transition-all text-zinc-700 placeholder-zinc-400"
                 required
               />
