@@ -77,6 +77,19 @@ export default function Footer() {
 
             {/* Social Links */}
             <div className="flex gap-3">
+              {/* Door/Login Icon */}
+              <Link
+                href="/login"
+                className="w-10 h-10 bg-zinc-800/50 hover:bg-orange-500 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                title="Login"
+              >
+                {/* Door icon SVG */}
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+                  <rect x="6" y="3" width="12" height="18" rx="2" stroke="currentColor" strokeWidth="1.8" />
+                  <circle cx="15.5" cy="12" r="1" fill="currentColor" />
+                  <path d="M6 21h12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                </svg>
+              </Link>
               <a
                 href="https://www.facebook.com/bacsalbusinessconsultancy"
                 target="_blank"
